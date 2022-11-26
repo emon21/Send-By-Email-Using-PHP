@@ -45,7 +45,7 @@
             $mail->Username = 'webdevhasib21@gmail.com';
  
             //SMTP password
-            $mail->Password = 'swluufwqpluzuvst';
+            $mail->Password = 'rlymqdmwqvrjoifk';
  
             //Enable TLS encryption;
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
