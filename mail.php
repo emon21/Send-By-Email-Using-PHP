@@ -2,6 +2,8 @@
 
 
 <?php
+
+
     //Import PHPMailer classes into the global namespace
     //These must be at the top of your script, not inside a function
     use PHPMailer\PHPMailer\PHPMailer;
@@ -77,10 +79,10 @@
             // $conn = mysqli_connect("localhost:8889", "root", "root", "test");
  
             // // insert in users table
-            // $sql = "INSERT INTO users(name, email, password, verification_code, email_verified_at) VALUES ('" . $name . "', '" . $email . "', '" . $encrypted_password . "', '" . $verification_code . "', NULL)";
-            // mysqli_query($conn, $sql);
+            $sql = "INSERT INTO users(name, email, password, verification_code, email_verified_at) VALUES ('" . $name . "', '" . $email . "', '" . $encrypted_password . "', '" . $verification_code . "', NULL)";
+            mysqli_query($conn, $sql);
  
-            // header("Location: email-verification.php?email=" . $email);
+            header("Location: email-verification.php?email=" . $email);
             // exit();
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

@@ -22,20 +22,24 @@
   <div class="card">
     <div class="card-header">Login From</div>
     <div class="card-body">
-    <form action="/action_page.php">
+    <form action="login_check.php" method="POST">
     <div class="form-group">
         <label for="email">Email address:</label>
-        <input type="email" class="form-control" placeholder="Enter email" id="email">
+        <input type="email" name="email" class="form-control" placeholder="Enter email" id="email">
     </div>
   <div class="form-group">
     <label for="pwd">Password:</label>
-    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+    <input type="password" name="password" class="form-control" placeholder="Enter password" id="pwd">
   </div>
 
     </div> 
     <div class="card-footer">
-        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn btn-primary" name="login">Login</button>
         <a href="reg.php" type="submit" class="btn btn-success float-right pt-2">sign Up</a>
+</div>
+<div class="pl-4 pb-3 pt-2 d-flex">
+<p>Forget Your Password No Warry?</p>
+<a href="recover_email.php" class="pl-2">Click Here</a>
 </div>
     </form>
   </div>

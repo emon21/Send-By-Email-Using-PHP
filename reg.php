@@ -22,24 +22,24 @@
   <div class="card">
     <div class="card-header">Registration From</div>
     <div class="card-body">
-    <form action="/action_page.php">
+    <form action="reg_process.php" method="POST">
     <div class="form-group">
         <label for="email">Email address:</label>
-        <input type="email" class="form-control" placeholder="Enter email" id="email">
+        <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
     </div>
   <div class="form-group">
     <label for="pwd">Password:</label>
-    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+    <input type="password" class="form-control" placeholder="Enter password" id="pwd" name="password">
   </div>
-  <div class="form-group">
+  <!-- <div class="form-group">
   <label for="comment">Comment:</label>
   <textarea class="form-control" rows="5" id="comment"></textarea>
-</div>
+</div> -->
   
 
     </div> 
     <div class="card-footer">
-        <button type="submit" class="btn btn-primary">Add User</button>
+        <button type="submit" class="btn btn-primary" name="reg">Add User</button>
         <a href="login.php" type="submit" class="btn btn-success float-right pt-2">Login</a>
 </div>
     </form>
